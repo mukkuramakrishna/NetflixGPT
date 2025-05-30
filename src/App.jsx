@@ -1,9 +1,14 @@
-import './App.css'
+import { Provider } from "react-redux";
+import "./App.css";
+import Body from "./components/Body";
+import appStore from "./utils/store/AppStore";
 
 function App() {
-  return(
-    <div className='mx-20 text-3xl text-green-500'>Rama namaste</div>
-  )
+  return (
+    <Provider store={appStore}>
+      <Body />
+    </Provider>
+  );
 }
 
-export default App
+export default App;
