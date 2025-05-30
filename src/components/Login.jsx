@@ -7,6 +7,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
+import { USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -40,8 +41,8 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: fullName.current.value,
-            photoURL:
-              "https://images.yourstory.com/cs/2/96eabe90392211eb93f18319e8c07a74/Imageis4q-1685411814330.jpg?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75",
+            photoURL: USER_AVATAR,
+              
           })
             .then(() => {
               const {uid, email, displayName, photoURL} = auth.currentUser;
@@ -136,11 +137,11 @@ const Login = () => {
             placeholder="Password"
           />
           {errorMessage.password && (
-            <p className="text-white">{errorMessage.password}</p>
+            <div className="text-white">{errorMessage.password}</div>
           )}
 
           {signInError && (
-            <p className="text-white">Credentials are Not Valid</p>
+            <div className="text-white">Credentials are Not Valid</div>
           )}
 
           <button
