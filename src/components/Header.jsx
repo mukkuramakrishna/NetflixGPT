@@ -68,7 +68,7 @@ const Header = () => {
                 src={user.photoURL}
                 alt="Profile"
               />
-                <div>{user.displayName}</div>
+                {/* <div>{user.displayName}</div> */}
                 </div>
 
               <div onClick={handleSignOut}>SignOut</div>
