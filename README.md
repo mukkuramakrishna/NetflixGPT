@@ -27,3 +27,8 @@ plannig for browse page with maincontainer and secondaryCotainer
 FetchData with Trailer video Data
 Embedded the youtube video and make it autoplay and mute
 tailwind classes to maintain good ui
+Build SecondaryContainer
+Build MovieList
+Build MovieCard
+Build usePopular Custom Hooks
+TMDC image CDN links.
