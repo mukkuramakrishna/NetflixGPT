@@ -32,3 +32,9 @@ Build MovieList
 Build MovieCard
 Build usePopular Custom Hooks
 TMDC image CDN links.
+GPT Search
+GPT search page
+GPT search -> Home page button toggling
+GPT multi-language for Search page 
+redux langSlice for multi-language
+select options dynamic, support languages, lag constants
