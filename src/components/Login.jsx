@@ -15,7 +15,7 @@ const Login = () => {
     email: "",
     password: "",
   });
-  const [signInError, setSignInError] = useState('');
+  const [signInError, setSignInError] = useState("");
 
   const fullName = useRef();
   const email = useRef();
@@ -42,24 +42,21 @@ const Login = () => {
           updateProfile(user, {
             displayName: fullName.current.value,
             photoURL: USER_AVATAR,
-              
           })
             .then(() => {
-              const {uid, email, displayName, photoURL} = auth.currentUser;
+              const { uid, email, displayName, photoURL } = auth.currentUser;
               dispatch(
-                        addUser({
-                          uid: uid,
-                          email: email,
-                          displayName: displayName,
-                          photoURL: photoURL,
-                        })
-                      );
+                addUser({
+                  uid: uid,
+                  email: email,
+                  displayName: displayName,
+                  photoURL: photoURL,
+                })
+              );
             })
-            .catch((error) => {
-            });
+            .catch((error) => {});
 
           // Signed up
-
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -90,11 +87,7 @@ const Login = () => {
     <>
       <Header />
       <div>
-        <img
-          className="absolute"
-          src={IMAGE_URL}
-          alt="logo"
-        />
+        <img className="absolute" src={IMAGE_URL} alt="logo" />
       </div>
       <div className="bg-gray-900 w-4/12 absolute right-0 left-0   my-12 mx-auto">
         <form

@@ -21,7 +21,7 @@ contants file for hardfcoded values
 registered tmdb app with tmdb personal use, so sunscription will ne filled
 get tmdb api now playing movies list data
 custom hooks for now playing movies
-created movieSlice 
+created movieSlice
 updated store with movie data
 plannig for browse page with maincontainer and secondaryCotainer
 FetchData with Trailer video Data
@@ -35,6 +35,6 @@ TMDC image CDN links.
 GPT Search
 GPT search page
 GPT search -> Home page button toggling
-GPT multi-language for Search page 
+GPT multi-language for Search page
 redux langSlice for multi-language
-select options dynamic, support languages, lag constants
+select options dynamic, supported languages, lang constants

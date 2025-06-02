@@ -9,7 +9,7 @@ import GptSearch from "./GptSearch/GptSearch";
 import { useSelector } from "react-redux";
 
 const Browse = () => {
-  const search = useSelector((store)=>store.Gpt?.showGptSearch)
+  const search = useSelector((store) => store.Gpt?.showGptSearch);
   useNowPlayMovies();
   usePopularMovies();
   useTopRatedMovies();
@@ -18,15 +18,14 @@ const Browse = () => {
     <>
       <div>
         <Header />
-        {search ? 
-        <GptSearch /> 
-        :
-         <>
-          <MainConatiner />
-          <SecondaryContainer />
-        </> }
-        
-        
+        {search ? (
+          <GptSearch />
+        ) : (
+          <>
+            <MainConatiner />
+            <SecondaryContainer />
+          </>
+        )}
       </div>
     </>
   );
